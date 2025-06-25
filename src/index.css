@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "saans-semibold";
+  src: url("./assets/fonts/SaansTRIAL-SemiBold.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "saans-semi";
+  src: url("./assets/fonts/SaansTRIAL-Semi.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "saans-bold";
+  src: url("./assets/fonts/SaansTRIAL-Bold.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "switzer-regular";
+  src: url("./assets/fonts/Switzer-Regular.otf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "switzer-medium";
+  src: url("./assets/fonts/Switzer-Medium.otf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "switzer-sem";
+  src: url("./assets/fonts/Switzer-Semibold.otf") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
