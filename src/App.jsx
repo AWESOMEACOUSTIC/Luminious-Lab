@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './components/Hero'
 import Content from './components/Content'
 import CardsGrid from './components/CardContent'
+import Banner1 from './components/Banner1'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Hero/>
       <Content />
       <CardsGrid />
+      <Banner1/>
     </div>
   )
 }
