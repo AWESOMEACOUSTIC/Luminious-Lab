@@ -3,6 +3,8 @@ import Hero from './components/Hero'
 import Content from './components/Content'
 import CardsGrid from './components/CardContent'
 import Banner1 from './components/Banner1'
+import Benefits from './components/Benefits'
+import Data from './components/Data'
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Content />
       <CardsGrid />
       <Banner1/>
+      {/* <Benefits /> */}
+      <Data />
     </div>
   )
 }
