@@ -6,6 +6,7 @@ import Banner1 from './components/Banner1'
 import Benefits from './components/Benefits'
 import Data from './components/Data'
 import Footer from './components/Footer'
+import CarasouelSection from './components/CarasouelSection'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Banner1/>
       {/* <Benefits /> */}
       <Data />
+      <CarasouelSection />
       <Footer/>
     </div>
   )
