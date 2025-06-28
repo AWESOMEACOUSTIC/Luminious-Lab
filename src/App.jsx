@@ -6,6 +6,7 @@ import Banner1 from './components/Banner1'
 import Benefits from './components/Benefits'
 import Data from './components/Data'
 import Footer from './components/Footer'
+import SectionWithFaq from './components/FaqSection'
 import CarasouelSection from './components/CarasouelSection'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       {/* <Benefits /> */}
       <Data />
       <CarasouelSection />
+      <SectionWithFaq />
       <Footer/>
     </div>
   )
