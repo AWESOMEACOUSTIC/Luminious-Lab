@@ -1,4 +1,5 @@
 import { Cards } from './Cards'
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const cardsData = [
     {
@@ -32,8 +33,11 @@ export default function CardsGrid() {
                     <Cards key={idx} {...card} />
                 ))}
             </div>
-            <button className='mt-10 w-[11vw] text-white font-[switzer-regular] py-4 rounded-full bg-black text-center cursor-pointer'>
-                All products
+            <button className='mt-10 flex gap-x-3 w-[11vw] items-center justify-center text-white font-[switzer-regular] py-4 rounded-full bg-black text-center cursor-pointer'>
+                <span>
+                    All products
+                </span>
+                <HiOutlineArrowNarrowRight className='w-6 h-6'/>
             </button>
         </div>
     )

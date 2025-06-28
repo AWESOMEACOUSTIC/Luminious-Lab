@@ -1,5 +1,5 @@
 import { useOnScreen } from "../hooks/useOnScreen"
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 function Banner1() {
     const [ref, isVisible] = useOnScreen('-50px')

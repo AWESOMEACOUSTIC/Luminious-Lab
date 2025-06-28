@@ -1,13 +1,12 @@
-import React from 'react'
 import Hero from './components/Hero'
 import Content from './components/Content'
 import CardsGrid from './components/CardContent'
 import Banner1 from './components/Banner1'
-import Benefits from './components/Benefits'
 import Data from './components/Data'
 import Footer from './components/Footer'
 import SectionWithFaq from './components/FaqSection'
 import CarasouelSection from './components/CarasouelSection'
+import Banner2 from './components/Banner2'
 
 function App() {
   return (
@@ -16,9 +15,9 @@ function App() {
       <Content />
       <CardsGrid />
       <Banner1/>
-      {/* <Benefits /> */}
       <Data />
       <CarasouelSection />
+      <Banner2/>
       <SectionWithFaq />
       <Footer/>
     </div>

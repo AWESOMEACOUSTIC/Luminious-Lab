@@ -125,10 +125,23 @@ function Data() {
         'Balances sleep hormone secretion',
       ],
     },
-    
+
   ];
 
-  return <div className="space-y-8 flex flex-col items-center justify-center  p-6">{cards.map((c, i) => <Card key={i} {...c} />)}</div>;
+  return (
+    <div className="flex flex-col items-center justify-center gap-y-2 mt-23 p-6 ">
+      <span className="text-sm text-gray-400/80 leading-none font-[switzer-regular]">Benefits</span>
+      <h1 className="pb-8 font-[switzer-medium] text-[1.6vw] leading-none">
+        Feel the difference in every aspect
+      </h1>
+      <div className="space-y-8 flex flex-col items-center justify-center">
+        {cards.map((c, i) => <Card key={i} {...c} />)}
+      </div>
+    </div>
+
+  )
+
+
 }
 
 export default Data;

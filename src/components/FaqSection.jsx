@@ -5,6 +5,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 
 export default function SectionWithFaq() {
+
   const rows = [
     { text: 'We believe in meaningful conversations. To help you out,', width: 'w-[24rem]' },
     { text: 'we provide', width: 'w-[12rem]' },
@@ -40,7 +41,7 @@ export default function SectionWithFaq() {
   const [expanded, setExpanded] = useState(null);
 
   return (
-    <section className="w-full h-[90vh] flex flex-col md:flex-row justify-between items-start px-70 py-16">
+    <section className="w-full h-[75vh] flex flex-col md:flex-row justify-between items-start px-70 py-8 mt-12">
       {/* Left column */}
       <div className="md:w-1/2">
         {rows.map((row, i) => (

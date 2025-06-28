@@ -65,7 +65,7 @@ const payments = [
 ];
 
 const Footer = () => (
-    <footer className="bg-black rounded-3xl overflow-hidden w-full py-5 mb-7 text-white">
+    <footer className="bg-black rounded-3xl overflow-hidden w-full py-5 mt-3 mb-7 text-white">
         {/* Top section: Branding, social, stats, and nav */}
         <div className="max-w-[89vw] mx-auto px-6 py-12 flex flex-col md:flex-row gap-y-8 md:gap-y-0">
             {/* Left: Logo, social, stats */}
@@ -105,16 +105,16 @@ const Footer = () => (
                 </div>
                 <div className="space-y-4">
                     {stats.map(({ Icon, text }) => (
-                        <div key={text} className="flex items-center space-x-2 text-sm">
-                            <Icon />
-                            <span>{text}</span>
+                        <div key={text} className="flex items-center space-x-2 text-sm font-[switzer-regular]">
+                            <Icon className='w-3 h-3 text-white/70'/>
+                            <span className='text-white/70'>{text}</span>
                         </div>
                     ))}
                 </div>
             </div>
 
             {/* Middle & Right: Navigation columns */}
-            <div className="md:w-1/3 flex justify-between">
+            <div className="md:w-2/3 flex justify-around font-[switzer-regular]">
                 <ul className="space-y-3 text-base">
                     {navColumn1.map((item) => (
                         <li key={item} className="hover:text-gray-400 cursor-pointer">
@@ -134,7 +134,7 @@ const Footer = () => (
 
         {/* Disclaimer */}
         <div className="max-w-[89vw] mx-auto px-6 pb-8">
-            <p className="text-[0.82vw] w-[54vw] text-gray-400">
+            <p className="text-[0.82vw] w-[54vw] text-gray-400 font-[switzer-regular]">
                 These statements have not been evaluated by the Food and Drug Administration.
                 In the European Union, the intended use of our products does not fall
                 within the scope or article 2 section 1 of 2017/45 MDR. Our products are
