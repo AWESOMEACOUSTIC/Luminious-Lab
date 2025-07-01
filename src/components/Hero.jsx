@@ -23,7 +23,7 @@ function Hero() {
           </div>
 
           <div className="w-full text-center mb-5">
-            <p className="text-white/37 text-[1.2vw] font-[switzer-medium]">
+            <p className="text-white/47 text-[1.2vw] font-[switzer-medium]">
               Red Light Therapy: proven, safe, and non-invasive
             </p>
             <h1 className="text-center text-white text-[5.1vw] font-[saans-semibold] tracking-tight leading-none">

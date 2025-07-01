@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import CarasouelCard from './CarasouelCard';
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 
