@@ -14,7 +14,7 @@ function App() {
       <Hero/>
       <Content />
       <CardsGrid />
-      <Banner1/>
+      {/* <Banner1/> */}
       <Data />
       <CarasouelSection />
       <Banner2/>

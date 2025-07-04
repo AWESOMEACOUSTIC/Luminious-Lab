@@ -1,6 +1,3 @@
-// Navbar.jsx
-import React from "react";
-
 export default function Navbar({ mobile }) {
     const items = [
         "Technology",
@@ -11,11 +8,10 @@ export default function Navbar({ mobile }) {
         "Shop",
     ];
 
-    // ─── DESKTOP NAVBAR ───
+    // DESKTOP NAVBAR 
     if (!mobile) {
         return (
             <div className="w-full flex items-center justify-center gap-x-14">
-                {/* logo SVG */}
                 <div className="logo w-40 text-white">
                     <svg width="100%" height="auto" viewBox="0 0 185 19" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.59259 4.55414C4.59259 2.09955 6.64877 0.109701 9.18519 0.109701C11.7216 0.109701 13.7778 2.09955 13.7778 4.55414C13.7778 7.00874 11.7216 8.99859 9.18519 8.99859C6.64877 8.99859 4.59259 7.00874 4.59259 4.55414Z"></path>
@@ -36,8 +32,6 @@ export default function Navbar({ mobile }) {
                         <path d="M179.494 18.0784C177.816 18.0784 176.447 17.6527 175.387 16.8013C174.334 15.9499 173.775 14.8439 173.709 13.4832H176.817C176.858 13.9924 177.126 14.45 177.619 14.8558C178.121 15.2616 178.746 15.4645 179.494 15.4645C180.127 15.4645 180.641 15.3452 181.035 15.1064C181.438 14.8598 181.64 14.5415 181.64 14.1516C181.64 13.5071 181.167 13.0973 180.221 12.9222L178.174 12.5044C177.623 12.393 177.134 12.2498 176.706 12.0748C176.279 11.8917 175.876 11.657 175.498 11.3706C175.119 11.0761 174.828 10.6982 174.622 10.2367C174.416 9.77514 174.314 9.24599 174.314 8.6492C174.314 7.62272 174.762 6.75937 175.658 6.05914C176.554 5.3589 177.738 5.00879 179.21 5.00879C180.657 5.00879 181.878 5.37084 182.873 6.09494C183.876 6.81905 184.46 7.80176 184.625 9.04308H181.516C181.442 8.55769 181.179 8.17575 180.727 7.89724C180.283 7.61874 179.777 7.47949 179.21 7.47949C178.692 7.47949 178.273 7.58691 177.952 7.80176C177.631 8.00864 177.471 8.29112 177.471 8.6492C177.471 9.23007 177.944 9.61201 178.889 9.79503L180.937 10.2128C181.545 10.3321 182.067 10.4793 182.503 10.6544C182.939 10.8215 183.346 11.0483 183.724 11.3347C184.102 11.6212 184.386 11.9952 184.575 12.4567C184.773 12.9103 184.871 13.4514 184.871 14.08C184.871 15.2019 184.37 16.1488 183.367 16.9207C182.372 17.6925 181.081 18.0784 179.494 18.0784Z"></path>
                     </svg>
                 </div>
-
-                {/* menu items */}
                 <ul className="flex items-center justify-center gap-x-10">
                     {items.map((item, i) =>
                         item === "Shop" ? (
@@ -53,8 +47,6 @@ export default function Navbar({ mobile }) {
                         )
                     )}
                 </ul>
-
-                {/* EN + Cart */}
                 <div className="flex items-center gap-x-6">
                     <span className="text-white text-[0.8vw] font-[switzer-regular]">
                         EN
@@ -87,9 +79,9 @@ export default function Navbar({ mobile }) {
         );
     }
 
-    // ─── MOBILE NAVBAR (column list) ───
+    // MOBILE NAVBAR
     return (
-        <ul className="flex flex-col justify-center items-center space-y-7 py-3 px-6 bg-[#fcf8f1]">
+        <ul className="flex flex-col justify-center items-center space-y-6 py-18 px-6 bg-[#fcf8f1]">
             {items.map((item, i) => (
                 <li key={i} className="text-black text-[0.85em] font-[switzer-regular]">
                     {item}

@@ -1,13 +1,12 @@
 export function Cards({
     imageSrc,
     title,
-    description,
     tag: { label, gradientFrom, gradientTo }
 }) {
     return (
-        <div className="w-[18vw] h-[25vw] bg-[#fcf8f1] rounded-2xl shadow-sm overflow-hidden flex flex-col rounded-tl-[2vw] rounded-tr-[2vw]">
+        <div className="w-[50vw] h-[30vh] md:w-[18vw] md:h-[25vw] bg-[#fcf8f1] rounded-2xl shadow-sm overflow-hidden flex flex-col rounded-tl-[2vw] rounded-tr-[2vw]">
             {/* Image */}
-            <div className="w-full h-50">
+            <div className="w-full h-full md:h-50">
                 <img
                     src={imageSrc}
                     alt={title}
@@ -18,7 +17,7 @@ export function Cards({
 
             {/* Text */}
             <div className="px-6 py-5 flex-1 flex flex-col">
-                <h3 className="text-[1vw] font-semibold mb-2 text-gray-400 font-[switzer-regular] leading-[1.2vw]">{title}</h3>
+                <h3 className="md:text-[1vw] text-[0.7em] font-semibold mb-2 text-gray-400 font-[switzer-regular] leading-[1rem] md:leading-[1.2vw]">{title}</h3>
             </div>
 
             {/* Tag */}
