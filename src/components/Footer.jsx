@@ -8,7 +8,7 @@ import {
     FaChartBar,
 } from 'react-icons/fa';
 
-// Social media links and icons
+
 const socialLinks = [
     { Icon: FaInstagram, label: 'Instagram', href: '#' },
     { Icon: FaLinkedin, label: 'LinkedIn', href: '#' },
@@ -34,7 +34,6 @@ const navColumn2 = [
     'Press kit',
 ];
 
-// Stats section
 const stats = [
     {
         Icon: FaUser,
@@ -142,7 +141,6 @@ const Footer = () => (
             </p>
         </div>
 
-        {/* Payment logos */}
         <div className="bg-black pt-18">
             <div className="max-w-[89vw] mx-auto px-6 py-8 flex items-center space-x-18 justify-start overflow-x-auto">
                 {payments.map(({ src, alt }) => (
