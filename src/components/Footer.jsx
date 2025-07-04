@@ -64,7 +64,7 @@ const payments = [
 ];
 
 const Footer = () => (
-    <footer className="bg-black rounded-3xl overflow-hidden w-full py-5 mt-3 mb-7 text-white">
+    <footer className="bg-black rounded-3xl overflow-hidden w-full md:py-5 mt-3 md:mb-2 text-white">
         {/* Top section: Branding, social, stats, and nav */}
         <div className="max-w-[89vw] mx-auto px-6 py-12 flex flex-col md:flex-row gap-y-8 md:gap-y-0">
             {/* Left: Logo, social, stats */}
