@@ -134,7 +134,7 @@ return (
       flex flex-col items-center justify-center
       gap-y-4 sm:gap-y-4 md:gap-y-5 lg:gap-y-6 xl:gap-y-6 2xl:gap-y-2
       mt-5 sm:mt-20 md:mt-20 lg:mt-24 xl:mt-24 2xl:mt-23
-      p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-6 bg-red-300
+      p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-6
     "
   >
     {/* Tag line */}

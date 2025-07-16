@@ -34,8 +34,8 @@ const sampleItems = [
 
 export default function CarasouelAnimation() {
   return (
-    <div className="min-h-screen py-10 w-full">
-      <h2 className="text-center text-[0.82vw] text-gray-400 uppercase font-[switzer-regular] mb-1">Testimonials</h2>
+    <div className="py-10 w-full">
+      <h2 className="text-center text-[0.58em] 2xl:text-[0.82vw] text-gray-400 uppercase font-[switzer-regular] 2xl:mb-1">Testimonials</h2>
       <h1 className="text-center text-3xl font-[saans-medium] mb-10 leading-none">
         Helping people feel better, every day
       </h1>

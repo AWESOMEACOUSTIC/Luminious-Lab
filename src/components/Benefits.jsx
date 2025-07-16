@@ -62,7 +62,7 @@ const Card = ({
     {/* Right text/content section */}
     <div className="p-8 space-y-3 2xl:space-y-6 flex flex-col justify-center items-center text-center">
       <h2 className="text-[2.65vw] font-bold text-black font-[saans-medium]">{title}</h2>
-      <p className="text-gray-500 mb-7 2xl:mb-22 font-[switzer-medium] text-lg 2xl:text-sm">{description}</p>
+      <p className="text-gray-500 leading-[1.3em] mb-7 2xl:mb-22 font-[switzer-medium] text-lg 2xl:text-sm">{description}</p>
       <p className="text-gray-500 text-[0.7em] 2xl:text-sm font-[switzer-regular]">{subDescription}</p>
 
       {features.length > 0 && (
