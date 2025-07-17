@@ -37,18 +37,18 @@ export default function SectionWithFaq() {
     },
   ];
 
-  const [hovered, setHovered]   = useState(null);
+  const [hovered, setHovered] = useState(null);
   const [expanded, setExpanded] = useState(null);
 
   return (
-    <section className="w-full h-[75vh] flex flex-col md:flex-row justify-between items-center 2xl:items-start 2xl:px-70 py-8 2xl:mt-17">
+    <section className="w-full 2xl:h-[75vh] flex flex-col md:flex-row justify-between items-center 2xl:items-start 2xl:px-70 py-8 2xl:mt-17">
       {/* Left column */}
-      <div className="md:w-1/2 flex flex-col items-center xl:items-start bg-red-800">
+      <div className="md:w-1/2 flex flex-col items-center xl:items-start">
         {rows.map((row, i) => (
           <p
             key={i}
             className={
-              `${row.width} font-[saans-medium] text-center text-[0.8em] xl:text-[1.65vw] xl:leading-[1.89vw]
+              `${row.width} font-[saans-medium] text-center xl:text-start text-[0.8em] xl:text-[1.65vw] xl:leading-[1.89vw]
                ${i >= rows.length - 2 ? 'text-black' : 'text-gray-400/70'}`
             }
           >
@@ -56,18 +56,38 @@ export default function SectionWithFaq() {
           </p>
         ))}
 
-        <button className="2xl:mt-10 2xl:px-6 2xl:py-4 bg-black text-white cursor-pointer 2xl:rounded-full font-[switzer-medium]">
-          <div className='flex 2xl:gap-x-4 items-center justify-center'>
-            <span>Book a free call</span>
-            <HiOutlineArrowNarrowRight className='w-6 h-6' />
+        <button
+          className="
+        bg-black text-white cursor-pointer font-[switzer-medium]
+        mt-4 px-4 py-2 rounded-full
+        sm:mt-4    sm:px-4  sm:py-2  sm:rounded-md
+        md:mt-6    md:px-5  md:py-3  md:rounded-lg
+        lg:mt-8    lg:px-6  lg:py-4  lg:rounded-lg
+        xl:mt-10   xl:px-6  xl:py-4  xl:rounded-full
+        2xl:mt-10  2xl:px-6 2xl:py-4 2xl:rounded-full
+        "
+        >
+          <div
+            className="
+            flex items-center justify-center
+            gap-x-2
+            md:gap-x-3
+            lg:gap-x-4
+            xl:gap-x-4
+            2xl:gap-x-4
+    "
+          >
+            <span className='text-[0.76em] sm:text-[0.89em] lg:text-[1em]'>Book a free call</span>
+            <HiOutlineArrowNarrowRight className="w-3 h-3 xl:w-6 xl:h-6" />
           </div>
         </button>
+
       </div>
 
       {/* Right column: FAQ */}
       <div className="md:w-1/2 mt-10 md:mt-0">
         {faqs.map((faq, i) => {
-          const isFaded    = hovered !== null && hovered !== i;
+          const isFaded = hovered !== null && hovered !== i;
           const isExpanded = expanded === i;
 
           return (
@@ -77,12 +97,12 @@ export default function SectionWithFaq() {
               onMouseLeave={() => setHovered(null)}
               onClick={() => setExpanded(isExpanded ? null : i)}
               className={
-                `cursor-pointer w-[34vw] p-2 rounded-xl mb-4 transition-colors duration-200
+                `cursor-pointer w-[84vw] 2xl:w-[34vw] p-2 rounded-xl mb-4 transition-colors duration-200
                  bg-[#F5F0E7] ${isFaded ? 'bg-opacity-10' : 'bg-opacity-70'}`
               }
             >
-              <div className="flex justify-between gap-x-8 items-start p-4">
-                <h4 className="font-medium text-base md:text-[1.11vw] font-[switzer-medium]">
+              <div className="flex justify-between gap-x-12 2xl:gap-x-8 items-start p-4">
+                <h4 className="font-medium text-base text-[0.78em] md:text-[1.11vw] font-[switzer-medium]">
                   {faq.question}
                 </h4>
                 {/* Arrow icon rotates on expand */}
@@ -92,18 +112,18 @@ export default function SectionWithFaq() {
                      ${isExpanded ? 'rotate-180' : ''}`
                   }
                 >
-                  <HiArrowDown className='font-light h-7'/>
+                  <HiArrowDown className='font-light h-7' />
                 </span>
               </div>
 
               {/* Expandable answer */}
-             <div
+              <div
                 className={
                   `overflow-hidden transition-all duration-500
-                   ${isExpanded ? 'max-h-[200px] opacity-100 mt-4' : 'max-h-0 opacity-0 mt-0'}`
+                   ${isExpanded ? 'max-h-[200px] opacity-100 2xl:mt-4' : 'max-h-0 opacity-0 mt-0'}`
                 }
               >
-                <p className="text-[0.87vw] leading-[1.09vw]  text-gray-500/80 px-4 mt-3 font-[switzer-regular]">
+                <p className="text-[0.58em] leading-[1.34em] 2xl:text-[0.87vw] 2xl:leading-[1.09vw]  text-gray-500/80 px-4 mt-3 font-[switzer-regular]">
                   {faq.answer}
                 </p>
               </div>
