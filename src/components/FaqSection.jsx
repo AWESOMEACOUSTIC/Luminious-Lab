@@ -41,14 +41,14 @@ export default function SectionWithFaq() {
   const [expanded, setExpanded] = useState(null);
 
   return (
-    <section className="w-full h-[75vh] flex flex-col md:flex-row justify-between items-start px-70 py-8 mt-12">
+    <section className="w-full h-[75vh] flex flex-col md:flex-row justify-between items-center 2xl:items-start 2xl:px-70 py-8 2xl:mt-17">
       {/* Left column */}
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 flex flex-col items-center xl:items-start bg-red-800">
         {rows.map((row, i) => (
           <p
             key={i}
             className={
-              `${row.width} font-[saans-medium] text-[1.65vw] leading-[1.89vw]
+              `${row.width} font-[saans-medium] text-center text-[0.8em] xl:text-[1.65vw] xl:leading-[1.89vw]
                ${i >= rows.length - 2 ? 'text-black' : 'text-gray-400/70'}`
             }
           >
@@ -56,8 +56,8 @@ export default function SectionWithFaq() {
           </p>
         ))}
 
-        <button className="mt-10 px-6 py-4 bg-black text-white cursor-pointer rounded-full font-[switzer-medium]">
-          <div className='flex gap-x-4 items-center justify-center'>
+        <button className="2xl:mt-10 2xl:px-6 2xl:py-4 bg-black text-white cursor-pointer 2xl:rounded-full font-[switzer-medium]">
+          <div className='flex 2xl:gap-x-4 items-center justify-center'>
             <span>Book a free call</span>
             <HiOutlineArrowNarrowRight className='w-6 h-6' />
           </div>
